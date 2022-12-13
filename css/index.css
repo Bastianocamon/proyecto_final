@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(../img/background.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.container{
+    width: 100%;
+    display: grid;
+    grid-gap:15px;  
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto);
+    grid-template-areas: 
+        "superior superior superior"
+        "label1 label1 label1"
+        "aseo aseo aseo"
+        "vet vet vet"
+        "ropa ropa ropa"
+        "label2 label2 label2"
+        "verano formal casual"
+        "label3 label3 label3"
+        "contacto contacto contacto";
+}
+
+.superior{
+    grid-area: superior;
+    text-align: center;
+    padding:45px 45px;
+}
+.superior img{
+    border-radius: 100%;
+    width: 120px;
+    height: 120px;
+}
+
+header{
+    font-size: 170%;
+    color: #000;
+    padding: 20px 0;
+}
+
+nav{  
+    border-radius: 10px;
+    padding:15px 20px;
+    display:inline-block;
+    background: #F6F60F;
+}
+nav a{
+    color:#000;
+    padding: 15px 20px;
+    font-size:120%;
+    text-decoration: none;
+}
+nav a:hover{
+    border-radius: 10px;
+    background:#11A717;
+}
+nav a:active{
+    background:#000;
+    color:#fff;
+    border:#000 1px solid;
+}
+
+#Servicios{
+    grid-area: label1;
+    text-align: center;
+    font-size: xx-large;
+}
+
+#AseoBelleza img, .Ropa img{
+    float: left;
+}
+
+.MedicoVet img{
+    float: right;
+}
+.MedicoVet div{
+    float: left;
+}
+
+ul{
+    padding: 20px;
+}
+
+#AseoBelleza div, .MedicoVet div, .Ropa div{
+    padding-top: 50px;
+    text-align: justify;
+    font-size: large;
+}
+
+#AseoBelleza img, .MedicoVet img, .Ropa img{
+    width: 500px;
+    height: auto;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+#AseoBelleza, .MedicoVet, .Ropa{
+    background-color: #11A717;
+    padding: 30px;
+}
+
+#AseoBelleza{
+    grid-area: aseo;
+}
+
+.MedicoVet{
+    grid-area: vet;
+}
+
+.Ropa{
+    grid-area: ropa;
+}
+
+#Productos{
+    grid-area: label2;
+    text-align: center;
+    font-size: xx-large;
+}
+
+#Verano, .Formal, .Casual{
+    margin: 10px;
+    background-color: #11A717;
+    text-align: center;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+#Verano img, .Formal img, .Casual img{
+    width: 250px;
+    height: auto;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+#Verano{
+    grid-area: verano;
+}
+
+.Formal{
+    grid-area: formal;
+}
+
+.Casual{
+    grid-area: casual;
+}
+
+#Contacto{
+    grid-area: label3;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.Contact{
+    grid-area: contacto;
+    font-weight: bold;
+    border-radius: 10px;
+    background:#11A717;
+    color:#000;
+    text-align:center;
+    padding:10px;
+    font-size:120%;
+    margin: auto 10px 5px;
+}
+
